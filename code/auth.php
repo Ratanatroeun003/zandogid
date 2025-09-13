@@ -15,7 +15,7 @@ if (isset($_POST['register'])) {
             'status' => 'error',
             'message' => '❌ Passwords do not match.'
         ];
-        header("Location: index.php");
+        header("Location: main.php");
         exit();
     }
 
@@ -33,7 +33,7 @@ if (isset($_POST['register'])) {
         'message' => 'Registration failed. Please try again.'
     ];
     }
-    header("Location: index.php");
+    header("Location: main.php");
     exit();
 }
 
@@ -70,7 +70,7 @@ if (isset($_POST['login'])) {
         ];
     }
     // Always redirect to the index page after processing
-    header("Location: index.php");
+    header("Location: main.php");
     exit();
 }
 ?>
