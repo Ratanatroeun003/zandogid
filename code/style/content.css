@@ -1,0 +1,81 @@
+.con-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  width: 100%;
+  height: 200px;
+  /* background-color: aqua; */
+  justify-content: space-between;
+}
+.con-logo a img {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: none;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  /* object-fit: cover; */
+  border: none;
+  border-bottom: 1px solid #ddd;
+  /* border-radius: 10px 10px 0 0; */
+  box-sizing: border-box;
+  /* background-color: aqua; */
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  /* border-radius: 10px; */
+  cursor: pointer;
+  background-color: white;
+}
+.umbrella-dcs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  font-weight: bold;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  width: 50%;
+  height: 200px;
+  /* background-color: aqua; */
+
+  /* background-color: aqua; */
+}
+.discound {
+  background-color: red;
+  height: 25px;
+  width: fit-content;
+  border-radius: 5px;
+  position: absolute;
+  font-size: 20px;
+  font-weight: bold;
+  align-items: center;
+  display: flex;
+  color: white;
+}
+.footer-dcs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  /* background-color: aqua; */
+}
