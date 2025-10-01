@@ -37,3 +37,8 @@
     transform: translateX(0);
   } /* slide back to image 1 */
 }
+@media (max-width: 768px) {
+  body {
+    margin: 0;
+  }
+}

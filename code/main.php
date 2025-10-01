@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>main page</title>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <link rel="stylesheet" href="style/main.css">
+  <link rel="stylesheet" href="../style/main.css">
 </head>
 <body style="margin-left :50px;margin-right :50px;">
       <?php
@@ -21,7 +21,7 @@
               icon: "<?php echo $alert['status']; ?>",
               title: "<?php echo $alert['message']; ?>",
                showConfirmButton: false,
-              timer: 1500
+              timer: 2000
       });
         </script>
         <?php

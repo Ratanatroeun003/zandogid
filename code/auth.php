@@ -8,18 +8,21 @@ require "config.php"; // include database connection
 if (isset($_POST['register'])) {
     $username = $conn->real_escape_string($_POST['username']);
     $email    = $conn->real_escape_string($_POST['email']);
-    $password = password_hash($_POST['password'], PASSWORD_DEFAULT); // hash password
-    $cm_password = $_POST['cm_password'];
-    if ($password !== password_hash($cm_password, PASSWORD_DEFAULT)) {
-        $_SESSION['alert'] = [
-            'status' => 'error',
-            'message' => '❌ Passwords do not match.'
-        ];
-        header("Location: main.php");
-        exit();
-    }
+$password = $_POST['password'];
+$confirm_password = $_POST['confirm_password'];
 
-    $sql = "INSERT INTO users (username, email, password) VALUES ('$username', '$email', '$password')";
+// Compare the raw passwords first
+if ($password !== $confirm_password) {
+    $_SESSION['alert'] = [
+        'status' => 'error',
+        'message' => '❌ Passwords do not match.'
+    ];
+    header("Location: main.php");
+    exit();
+}
+$hashed_password = password_hash($password, PASSWORD_DEFAULT);
+
+   $sql = "INSERT INTO users (username, email, password) VALUES ('$username', '$email', '$hashed_password')";
     
     if ($conn->query($sql)) {
            $_SESSION['alert'] = [

@@ -3,15 +3,15 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin-top: 20px;
   width: 100%;
-  height: 200px;
+  height: 170px;
   /* background-color: aqua; */
   justify-content: space-between;
 }
 .con-logo a img {
-  width: 150px;
+  width: 100%;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

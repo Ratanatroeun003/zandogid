@@ -25,7 +25,7 @@
   <?php include 'header.php'; ?>
 
 <!-- your content -->
-   <img src="../img/16.png" alt="">
+   <img src="../img/16.png" alt="" style="width:100%; margin-bottom: 30px;">
  <div class="row col-md-12 con-card">
     <div class=" card col-md-3"data-aos="fade-up-right" data-aos-delay="700">
         <a href="">
