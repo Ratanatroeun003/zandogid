@@ -10,7 +10,14 @@ if (isset($_POST['register'])) {
     $email    = $conn->real_escape_string($_POST['email']);
 $password = $_POST['password'];
 $confirm_password = $_POST['confirm_password'];
-
+    if (empty($username) || empty($email) || empty($password) || empty($confirm_password)) {
+        $_SESSION['alert'] = [
+            'status' => 'error',
+            'message' => '❌ All fields are required.'
+        ];
+        header("Location: main.php");
+        exit();
+    }
 // Compare the raw passwords first
 if ($password !== $confirm_password) {
     $_SESSION['alert'] = [
@@ -45,7 +52,14 @@ $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 if (isset($_POST['login'])) {
     $username = $conn->real_escape_string($_POST['username']);
     $password = $_POST['password'];
-
+    if (empty($username) || empty($password)) {
+        $_SESSION['alert'] = [
+            'status' => 'error',
+            'message' => '❌ All fields are required.'
+        ];
+        header("Location: main.php");
+        exit();
+    }
     $sql = "SELECT * FROM users WHERE username='$username'";
     $result = $conn->query($sql);
 

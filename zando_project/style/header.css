@@ -1,0 +1,613 @@
+.login-container {
+  display: none;
+}
+.container-fluid {
+  background-color: rgb(244, 235, 235);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1001;
+  width: 100%;
+  height: auto;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #333;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  flex-wrap: nowrap;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+.fa-user-plus {
+  margin-right: 3px;
+  font-size: 20px;
+  display: none;
+}
+.con-menu {
+  margin-right: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 20%;
+
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  transition: background-color 0.3s ease;
+}
+.con-menu h5 {
+  font-size: 19px;
+}
+.search-bar-container {
+  /* width: 100%; */
+  max-width: 600px; /* Adjust as needed */
+  margin: 50px auto; /* Centers the search bar and adds vertical space */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.search-input-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative; /* For positioning icons */
+  padding-bottom: 10px; /* Space for the hr below */
+}
+
+.search-input {
+  flex-grow: 1; /* Allows the input to take up most of the space */
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding: 10px 0; /* Vertical padding, no horizontal */
+  padding-right: 60px; /* Make space for icons */
+  background: transparent; /* Ensure no background color */
+}
+
+.search-input::placeholder {
+  color: #888;
+  font-style: italic;
+  font-size: 16px;
+  margin-right: 3px;
+}
+
+.search-icon-button,
+.close-icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0 10px;
+  font-size: 18px;
+  color: #555;
+  display: flex; /* For SVG alignment */
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  left: auto;
+  top: 50%;
+  transform: translateY(-50%); /* Vertically center */
+}
+.fa-bars {
+  display: none;
+}
+.search-icon-button {
+  right: 35px; /* Adjust spacing between icons */
+}
+
+.search-divider {
+  border: none;
+  border-top: 1px solid #ccc; /* Thin gray line */
+  margin-top: 5px; /* Space between input and line */
+}
+.menu {
+  display: flex;
+  gap: 80px; /* space between columns */
+  font-family: Arial, sans-serif;
+  position: absolute;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  border-radius: 8px;
+  /* width: 80%; */
+  box-sizing: border-box;
+  display: none;
+  transition: all 0.3s ease;
+  /* max-width: 1500px;
+  min-width: 600px; */
+  height: auto;
+  width: 100%;
+
+  /* overflow-y: auto; */
+  /* flex-wrap: wrap; */
+  /* gap: 40px; */
+  margin-top: 10px;
+  margin-bottom: 20px;
+  /* border: 1px solid #ddd; */
+}
+.menu1 {
+  display: flex;
+  gap: 80px; /* space between columns */
+  font-family: Arial, sans-serif;
+  position: absolute;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  border-radius: 8px;
+  /* width: 80%; */
+  box-sizing: border-box;
+  display: none;
+  transition: all 0.3s ease;
+  /* max-width: 1500px;
+  min-width: 600px; */
+  height: auto;
+  width: 100%;
+
+  /* overflow-y: auto; */
+  /* flex-wrap: wrap; */
+  /* gap: 40px; */
+  margin-top: 10px;
+  margin-bottom: 20px;
+  /* border: 1px solid #ddd; */
+}
+.menu2 {
+  display: flex;
+  gap: 80px; /* space between columns */
+  font-family: Arial, sans-serif;
+  position: absolute;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  border-radius: 8px;
+  /* width: 80%; */
+  box-sizing: border-box;
+  display: none;
+  transition: all 0.3s ease;
+  /* max-width: 1500px;
+  min-width: 600px; */
+  height: auto;
+  width: 100%;
+
+  /* overflow-y: auto; */
+  /* flex-wrap: wrap; */
+  /* gap: 40px; */
+  margin-top: 10px;
+  margin-bottom: 20px;
+  /* border: 1px solid #ddd; */
+}
+.menu3 {
+  display: flex;
+  gap: 80px; /* space between columns */
+  font-family: Arial, sans-serif;
+  position: absolute;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  border-radius: 8px;
+  /* width: 80%; */
+  box-sizing: border-box;
+  display: none;
+  transition: all 0.3s ease;
+  /* max-width: 1500px;
+  min-width: 600px; */
+  height: auto;
+  width: 100%;
+
+  /* overflow-y: auto; */
+  /* flex-wrap: wrap; */
+  /* gap: 40px; */
+  margin-top: 10px;
+  margin-bottom: 20px;
+  /* border: 1px solid #ddd; */
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.title {
+  font-weight: bold;
+  margin-bottom: 10px;
+  width: 5%;
+}
+
+.sale {
+  color: red;
+  font-weight: bold;
+}
+
+.sale a {
+  color: red;
+  text-decoration: none;
+}
+
+.column a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+.column a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 884px) {
+  .con-menu {
+    display: none;
+  }
+  .btn-outline-primary,
+  .btn-outline-success {
+    display: none;
+  }
+  .fa-user-plus,
+  .fa-bars {
+    margin-right: 3px;
+    font-size: 15px;
+    display: block;
+  }
+}
+@media (max-width: 440px) {
+  .search-bar-container {
+    padding: 10px;
+  }
+  .search-input {
+    font-size: 16px;
+  }
+  .search-icon-button,
+  .close-icon-button {
+    padding: 0 5px;
+  }
+  .search-icon-button {
+    right: 30px; /* Adjust spacing between icons */
+  }
+  .menu {
+    padding: 10px;
+    gap: 40px; /* Reduce gap between columns */
+  }
+  .column {
+    gap: 4px; /* Reduce gap between links */
+  }
+  .title {
+    font-size: 16px; /* Slightly smaller titles */
+  }
+  .column a {
+    font-size: 12px; /* Slightly smaller links */
+  }
+  .fa-magnifying-glass {
+    display: none;
+  }
+  .search-icon {
+    font-size: 10px;
+  }
+}
+/* General Modal Modernization */
+.modal-content {
+  /* Subtle, modern shadow for depth */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  /* Slightly more rounded corners */
+  border-radius: 20px;
+  border: none; /* Remove default border */
+}
+
+/* Header Styling */
+.modal-header {
+  border-bottom: 1px solid #d5d4d4; /* Lighter separator */
+  padding: 1.5rem;
+}
+
+.modal-title {
+  /* Use a slightly bolder font-weight for the title */
+  font-weight: bolder;
+  color: blue;
+  font-size: 1.7rem;
+  margin: 0;
+  line-height: 1.2;
+  flex: 1; /* Take up available space */
+  text-align: center; /* Center the title */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn-close {
+  /* Slightly darker/more visible close button */
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.btn-close:hover {
+  opacity: 1;
+}
+
+/* Body and Form Styling */
+.modal-body {
+  padding: 1.5rem;
+  font-size: 1rem;
+  color: #1b1b1b;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+/* Form Input Focus State */
+.form-control:focus {
+  /* Use a custom, non-blue focus color and shadow */
+  border-color: #5b9bd5; /* A pleasant blue-gray */
+  box-shadow: 0 0 0 0.25rem rgba(91, 155, 213, 0.25);
+}
+
+/* Primary Button Styling (Log In/Register) */
+.btn-primary {
+  /* Change primary button to a more modern, slightly lighter blue */
+  background-color: #5b9bd5;
+  border-color: #5b9bd5;
+  font-weight: 600;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #4a8ac2;
+  border-color: #4a8ac2;
+}
+
+/* Secondary Button (Sign Up - note: remove the extra Sign Up button in HTML for cleanliness) */
+.btn-success {
+  /* Modern flat green look */
+  background-color: #4caf50;
+  border-color: #4caf50;
+  font-weight: 600;
+  transition: background-color 0.2s, border-color 0.2s;
+  margin-top: 10px; /* Add space above it */
+}
+
+.btn-success:hover {
+  background-color: #45a049;
+  border-color: #45a049;
+}
+
+/* Links within the modal (for switching between Login/Register) */
+.modal-body p a {
+  color: #5b9bd5; /* Match the primary color */
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.modal-body p a:hover {
+  color: #4a8ac2;
+  text-decoration: underline;
+}
+
+/* Margin on the last element in the form before the link */
+.modal-body form button.w-100 {
+  margin-bottom: 10px;
+}
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+  .modal-dialog {
+    max-width: 90%;
+    margin: 1.75rem auto;
+  }
+}
+/* Specific Adjustments for Login Modal */
+#loginModal .modal-header {
+  background-color: #f7f7f7; /* Light gray header for distinction */
+}
+#loginModal .btn-primary {
+  width: 100%; /* Full-width button for easier tapping */
+}
+/* Specific Adjustments for Register Modal */
+#registerModal .modal-header {
+  background-color: #f7f7f7; /* Light gray header for distinction */
+}
+#registerModal .btn-success {
+  width: 100%; /* Full-width button for easier tapping */
+}
+/* Hide scrollbars but allow scrolling */
+.menu::-webkit-scrollbar {
+  display: none;
+}
+.menu {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+@media (max-width: 600px) {
+  .menu {
+    flex-direction: column;
+    max-height: 300px; /* Adjust as needed */
+    overflow-y: auto;
+  }
+}
+@media (max-width: 400px) {
+  .search-input {
+    font-size: 16px;
+  }
+  .search-icon-button,
+  .close-icon-button {
+    padding: 0 5px;
+  }
+  .search-icon-button {
+    right: 30px; /* Adjust spacing between icons */
+  }
+}
+@media (max-width: 500px) {
+  .menu {
+    padding: 10px;
+    gap: 40px; /* Reduce gap between columns */
+  }
+  .column {
+    gap: 4px; /* Reduce gap between links */
+  }
+  .title {
+    font-size: 16px; /* Slightly smaller titles */
+  }
+  .column a {
+    font-size: 12px; /* Slightly smaller links */
+  }
+}
+@media (max-width: 768px) {
+  .menu {
+    top: 70px; /* Adjust position for smaller screens */
+    width: 90%; /* Make menu narrower */
+  }
+}
+@media (max-width: 480px) {
+  .menu {
+    top: 60px; /* Further adjust position */
+    width: 95%; /* Almost full width */
+    padding: 10px; /* Reduce padding */
+  }
+  .column {
+    gap: 3px; /* Further reduce gap between links */
+  }
+  .title {
+    font-size: 14px; /* Further smaller titles */
+  }
+  .column a {
+    font-size: 11px; /* Further smaller links */
+  }
+}
+@media (max-width: 400px) {
+  .menu {
+    top: 50px; /* Further adjust position */
+    width: 100%; /* Full width */
+    padding: 5px; /* Further reduce padding */
+  }
+  .column {
+    gap: 2px; /* Further reduce gap between links */
+  }
+  .title {
+    font-size: 12px; /* Further smaller titles */
+  }
+  .column a {
+    font-size: 10px; /* Further smaller links */
+  }
+}
+/* Adjust modal title font size for smaller screens */
+@media (max-width: 576px) {
+  .modal-title {
+    font-size: 1.25rem; /* Slightly smaller title */
+  }
+}
+
+/* Adjust modal padding for smaller screens */
+@media (max-width: 576px) {
+  .modal-header,
+  .modal-body {
+    padding: 1rem; /* Reduce padding */
+  }
+}
+/* Ensure buttons are easily tappable on small screens */
+@media (max-width: 576px) {
+  .btn-primary,
+  .btn-success {
+    padding: 0.75rem; /* Increase padding for easier tapping */
+    font-size: 1rem; /* Slightly larger text */
+  }
+}
+@media (max-width: 400px) {
+  .fa-user-plus {
+    font-size: 18px;
+  }
+}
+@media (max-width: 400px) {
+  .fa-bars {
+    font-size: 18px;
+  }
+}
+@media (max-width: 400px) {
+  .con-menu h5 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 400px) {
+  .con-menu {
+    gap: 5px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 400px) {
+  .search-bar-container {
+    margin: 20px auto; /* Reduce vertical space */
+    padding: 10px; /* Reduce padding */
+  }
+}
+@media (max-width: 400px) {
+  .search-input {
+    font-size: 16px;
+  }
+}
+@media (max-width: 400px) {
+  .search-icon-button,
+  .close-icon-button {
+    padding: 0 5px;
+  }
+  .search-icon-button {
+    right: 30px; /* Adjust spacing between icons */
+  }
+}
+@media (max-width: 400px) {
+  .search-divider {
+    margin-top: 3px; /* Reduce space between input and line */
+  }
+}
+@media (max-width: 400px) {
+  .menu {
+    padding: 5px; /* Further reduce padding */
+    gap: 20px; /* Reduce gap between columns */
+  }
+}
+@media (max-width: 400px) {
+  .column {
+    gap: 2px; /* Further reduce gap between links */
+  }
+  .title {
+    font-size: 12px; /* Further smaller titles */
+  }
+  .column a {
+    font-size: 10px; /* Further smaller links */
+  }
+}
+@media (max-width: 400px) {
+  .modal-header,
+  .modal-body {
+    padding: 0.75rem; /* Further reduce padding */
+  }
+}
+@media (max-width: 400px) {
+  .btn-primary,
+  .btn-success {
+    padding: 0.5rem; /* Further increase padding for easier tapping */
+    font-size: 0.875rem; /* Slightly smaller text */
+  }
+}
+
+/* Specific Adjustments for Login Modal */
+#loginModal .modal-header {
+  background-color: #f7f7f7; /* Light gray header for distinction */
+}
+#loginModal .btn-primary {
+  width: 100%; /* Full-width button for easier tapping */
+}

@@ -20,8 +20,7 @@
              position: "top-end",
               icon: "<?php echo $alert['status']; ?>",
               title: "<?php echo $alert['message']; ?>",
-               showConfirmButton: false,
-              timer: 2000
+              draggable: true
       });
         </script>
         <?php
@@ -35,7 +34,7 @@ include 'header.php';
     <div class="slideshow-container">
     <div class="slideshow">
       <img src="../img/new.png" >
-      <img src="../img/2.png">     
+      <img src="../img/logo.png">     
     </div>
   </div>
   <?php

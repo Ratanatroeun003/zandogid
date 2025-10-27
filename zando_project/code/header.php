@@ -281,7 +281,7 @@
           width="20%"
          height="auto"
         />
-        <button class="text-secondary w-25 border h-75" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" ><i class="fa-solid fa-magnifying-glass"></i>&nbsp;Search</button>
+        <button class="text-secondary w-25 border h-75 search-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" ><i class="fa-solid fa-magnifying-glass"></i>&nbsp;Search</button>
 
 <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
   <div class="offcanvas-header">
@@ -354,16 +354,14 @@
     </button>
     <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#registerModal">
       REGISTER
-    </button>
-       
-              
-      </div>
-    </nav>
-    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    </button>        
+    </div>
+  </nav>
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="loginModalLabel">Login</h5>
+        <h5 class="modal-title" id="loginModalLabel">LOGIN</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -387,7 +385,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="registerModalLabel">Register</h5>
+        <h5 class="modal-title" id="registerModalLabel">REGISTER</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
