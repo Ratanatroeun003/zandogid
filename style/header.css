@@ -22,7 +22,21 @@
   align-items: center;
   display: flex;
   flex-direction: row;
+  padding: 1rem;
 }
+.logo-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  gap: 8px; /* space between image and text */
+}
+.logo-link img {
+  height: 40px;
+  width: auto;
+}
+
+
 .fa-user-plus {
   margin-right: 3px;
   font-size: 20px;

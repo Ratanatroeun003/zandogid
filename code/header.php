@@ -275,12 +275,14 @@
     </div>
   </div>
   </div>
-        <img
+        <a href="main.php" class="logo-link"><img         
           src="../img/ZANDO-NEW-LOGO-2025.png"
           alt=""
-          width="20%"
-         height="auto"
-        />
+        
+         
+         
+        /></a>
+      
         <button class="text-secondary w-25 border h-75 search-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" ><i class="fa-solid fa-magnifying-glass"></i>&nbsp;Search</button>
 
 <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
